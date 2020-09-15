@@ -1,52 +1,16 @@
-/* body {
-  margin: 0;
-}
-
-.container-rosa {
-  width: 500px;
-  height: 300px;
-  background-color: pink;
-  position: relative;
-}
-.rojo {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
-.naranja {
-  width: 100px;
-  height: 100px;
-  background-color: #ffa500;
-  position: absolute;
-  right: 10px
-
-}
-.amarillo {
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
-}
-
-.container {
-  background-color: #cacaca;
-} 
-
-
-HASTA ACA PRIMERA PARTE DE LA CLASE*/
 
 * {
   margin: 0;
 }
 
 body {
-  width: 100vw;
   height: 200vh;
   background-color: orange;
+  overflow-x: hidden;
 }
 
-main {
-  margin-top: 200px;
+.no-scroll {
+  overflow: hidden;
 }
 
 .overlay {
@@ -55,15 +19,7 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
-}
-
-nav {
-  height: 200px;
-  background-color: blue;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 3;
+  bottom: 0;
 }
 
 .menu {
@@ -73,20 +29,16 @@ nav {
   color: #fff;
   position: absolute;
   right: 0;
-  top: 0
+  top: 0;
+  transform: translate(200px);
+  transition: 2s;
+}
+
+.mostrar-menu {
+  transform: translate(0)
 }
 
 .ocultar {
   display: none;
 }
 
-#gatito {
-  position: relative;
-  z-index: 1;
-}
-
-#gatito2 {
-  position: relative;
-  right: 100px;
-  z-index: 2;
-}
